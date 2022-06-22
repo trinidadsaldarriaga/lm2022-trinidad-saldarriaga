@@ -1,4 +1,4 @@
-#include <iostream>
+ #include <iostream>
 #include <stdint.h>
 
 typedef enum {ACUMULAR, PROMEDIAR} estado;
