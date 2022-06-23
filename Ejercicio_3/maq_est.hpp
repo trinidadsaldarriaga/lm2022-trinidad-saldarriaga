@@ -1,4 +1,4 @@
- #include <iostream>
+#include <iostream>
 #include <stdint.h>
 
 typedef enum {ACUMULAR, PROMEDIAR} estado;
@@ -13,7 +13,6 @@ class ClaseMaq {        //desarrollo la clase
     uint32_t acum;
     uint32_t contador; 
     uint32_t N;
-    uint32_t size;
 
     public:
     ClaseMaq(uint32_t _N): N(_N){}
@@ -32,7 +31,7 @@ class ClaseMaq {        //desarrollo la clase
             acum = acum + signal[contador];
             if(contador == N)       //se cumplen N llamados
                 {
-                    contador = 0;
+                   // y en el if poner N-1
                     E = PROMEDIAR;
                 }
             else
